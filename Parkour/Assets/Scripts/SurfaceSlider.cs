@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SurfaceSlider : MonoBehaviour
@@ -16,7 +14,6 @@ public class SurfaceSlider : MonoBehaviour
         if (collision.gameObject.tag == "LevelGround")
             _normal = collision.contacts[0].normal;
     }
-
 
     private void OnDrawGizmos()
     {
