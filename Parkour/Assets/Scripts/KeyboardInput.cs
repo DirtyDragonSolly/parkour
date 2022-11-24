@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class KeyboardInput : MonoBehaviour
@@ -15,8 +13,6 @@ public class KeyboardInput : MonoBehaviour
             horizontal = 0;
         }
 
-        _movement.Move(new Vector3(-horizontal, 0, -vertical));
-
-    
+        _movement.Move(new Vector3(-horizontal, 0, -vertical));    
     }
 }
