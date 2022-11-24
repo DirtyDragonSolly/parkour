@@ -9,8 +9,7 @@ public class PhysicsJump : MonoBehaviour
     public float jumpPower = 10f;
 
     public void Jump(float jump)
-    {
-        
+    {        
         _rigidbody.MovePosition(_rigidbody.position + jumpNormal);
     }
 }
