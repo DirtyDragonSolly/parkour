@@ -10,7 +10,6 @@ public class NextLevel : MonoBehaviour
         if(trigger.gameObject.tag == "Finish")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-
         }
     }
 }
