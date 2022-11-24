@@ -1,12 +1,9 @@
 using UnityEngine;
 
-
 [RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour
-{
-    
+{    
     public float JumpForce = 300f;
-
     
     private bool _isGrounded;
     private Rigidbody _rb;
@@ -15,7 +12,6 @@ public class Movement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody>();
     }
-
     
     void FixedUpdate()
     {    
@@ -29,7 +25,6 @@ public class Movement : MonoBehaviour
             if (_isGrounded)
             {
                 _rb.AddForce(Vector3.up * JumpForce);
-
             }
         }
     }
